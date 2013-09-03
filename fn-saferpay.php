@@ -27,7 +27,7 @@ function fn_get_createpayiniturl($gateway, $order, $backlink, $faillink)
 		 'ACCOUNTID' => $gateway->saferpay_accountid,
 		 'AMOUNT' => round($order->get_total(),2) * 100, // Saferpay wants to have cent-values
 		 'CURRENCY' => get_woocommerce_currency(),
-		 'DESCRIPTION' => urlencode('Your order #' . $order->id . ' from ' . 'Shopname'),
+		 'DESCRIPTION' => urlencode('Order #' . $order->id),
 		 'ORDERID' => $order->id,
 		 /* 'VTCONFIG' => '', */		 
 		 'SUCCESSLINK' => $gateway->successlink,
