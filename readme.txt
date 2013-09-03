@@ -65,6 +65,9 @@ The manual installation method involves downloading our eCommerce plugin and upl
 
 == Changelog ==
 
+= 0.4.5 - 03/09/2013 =
+* Adjusted version/stable tag to be reflected properly
+
 = 0.4.4 - 29/08/2013 =
 * Submission to WordPress.org
 * German translation added
