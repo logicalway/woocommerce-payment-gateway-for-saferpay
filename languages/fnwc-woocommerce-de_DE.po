@@ -1,0 +1,174 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Saferpay\n"
+"POT-Creation-Date: 2013-09-03 14:41+0100\n"
+"PO-Revision-Date: 2013-09-03 14:47+0100\n"
+"Last-Translator: Stefan Keller <s.keller@fern.ch>\n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: D:\\fern.ch\\web-2013\\wp-content\\plugins\\fn-"
+"woocommerce-saferpay\n"
+
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/class-fnwc-gateway-saferpay.php:36
+msgid "WooCommerce Payment Gateway for Saferpay"
+msgstr "WooCommerce Payment Gateway für Saferpay"
+
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/class-fnwc-gateway-saferpay.php:181
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/class-fnwc-gateway-saferpay.php:227
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/class-fnwc-gateway-saferpay.php:233
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/class-fnwc-gateway-saferpay.php:239
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/class-fnwc-gateway-saferpay.php:245
+msgid "Enable/Disable"
+msgstr "Ein-/Ausschalten"
+
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/class-fnwc-gateway-saferpay.php:183
+msgid "Enable Saferpay Payment"
+msgstr "Saferpay Payment aktivieren"
+
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/class-fnwc-gateway-saferpay.php:187
+msgid "Saferpay Account ID"
+msgstr "Saferpay-Konto ID"
+
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/class-fnwc-gateway-saferpay.php:189
+msgid ""
+"Your Saferpay account ID. The ID of the Saferpay Test Account is "
+"99867-94913159."
+msgstr ""
+"Die ID ihres Saferpay-Kontos. Die ID des Testkontos ist 99867-94913159."
+
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/class-fnwc-gateway-saferpay.php:190
+msgid "99867-94913159"
+msgstr "99867-94913159"
+
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/class-fnwc-gateway-saferpay.php:194
+msgid "Title"
+msgstr "Titel"
+
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/class-fnwc-gateway-saferpay.php:196
+msgid "This controls the title which the user sees during checkout."
+msgstr "Dieser Titel wird während des Zahlungsvorganges angezeigt."
+
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/class-fnwc-gateway-saferpay.php:197
+msgid "Saferpay Payment"
+msgstr "Saferpay Payment"
+
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/class-fnwc-gateway-saferpay.php:201
+msgid "Customer Message"
+msgstr "Nachricht an Kunde"
+
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/class-fnwc-gateway-saferpay.php:206
+msgid "Invoice prefix"
+msgstr "Rechnungspräfix"
+
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/class-fnwc-gateway-saferpay.php:208
+msgid ""
+"Please enter a prefix for your invoice numbers. If you use your Saferpay "
+"account for multiple stores ensure this prefix is unqiue to identify the "
+"order correctly."
+msgstr ""
+"Bitte geben Sie das Präfix für die Bestell-/Rechnungsnummer an. Falls Sie "
+"ihr Saferpay-Konto für mehrere Shops benutzen, geben Sie ein eindeutiges "
+"Präfix an. So können Sie die Bestellung sicher identifizieren."
+
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/class-fnwc-gateway-saferpay.php:209
+msgid "WC-"
+msgstr "WC-"
+
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/class-fnwc-gateway-saferpay.php:213
+msgid "Invoice description"
+msgstr "Rechnungsbeschreibung"
+
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/class-fnwc-gateway-saferpay.php:215
+msgid ""
+"This is the description which the user sees during the Saferpay payment "
+"process. Use the placeholder #_ORDERID to get the Id of the current order."
+msgstr ""
+"Dies ist die Beschreibung, die die Benutzer während des Zahlungsvorganges "
+"auf Saferpay sehen. Der Platzhalter #_ORDERID wird mit der Nummer der "
+"aktuelle Bestellung ersetzt."
+
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/class-fnwc-gateway-saferpay.php:216
+msgid "Your order # #_ORDERID"
+msgstr "Ihre Bestellung # #_ORDERID"
+
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/class-fnwc-gateway-saferpay.php:222
+msgid "Payment methods"
+msgstr "Zahlungsmittel"
+
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/class-fnwc-gateway-saferpay.php:229
+msgid "MasterCard"
+msgstr "MasterCard"
+
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/class-fnwc-gateway-saferpay.php:235
+msgid "Visa"
+msgstr "Visa"
+
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/class-fnwc-gateway-saferpay.php:241
+msgid "American Express"
+msgstr "American Express"
+
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/class-fnwc-gateway-saferpay.php:247
+msgid "Direct payment"
+msgstr "Sofortüberweisung"
+
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/class-fnwc-gateway-saferpay.php:300
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/fn-saferpay.php:212
+msgid "Could not connect to the payment provider"
+msgstr "Verbindung zum Payment Provider fehlgeschlagen"
+
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/fn-saferpay.php:144
+msgid "Aborting, order already processing or completed"
+msgstr ""
+"Zahlungsvorgang abgebrochen, der Auftrag ist bereits fertiggestellt oder in "
+"Bearbeitung"
+
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/fn-saferpay.php:146
+msgid "Order already processing or completed"
+msgstr "Auftrag ist schon fertiggestellt oder in Bearbeitung"
+
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/fn-saferpay.php:155
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/fn-saferpay.php:157
+msgid "Payment amount mismatch"
+msgstr "Betrag stimmt nicht überein."
+
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/fn-saferpay.php:173
+msgid "Saferpay payment completed"
+msgstr "Saferpay payment komplett"
+
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/fn-saferpay.php:183
+msgid "Payment not completed"
+msgstr "Saferpay Payment komplett"
+
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/fn-saferpay.php:188
+msgid "Payment could not be validated"
+msgstr "Zahlung konte nicht bestätigt werden"
+
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/fn-utilities.php:8
+msgid ""
+"The WooCommerce Payment Gateway for Saferpay is activated but your system "
+"does not meet the requirements:"
+msgstr ""
+"Der WooCommerce Payment Gateway für Saferpay ist aktiviert, aber das System "
+"erfüllt die Vorgaben nicht:"
+
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/fn-utilities.php:17
+msgid "PHP extention curl is missing"
+msgstr "PHP extention curl ist nicht vorhanden"
+
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/fn-utilities.php:23
+msgid "WooCommerce is not installed"
+msgstr "WooCommerce ist nicht installiert"
+
+#: D:\fern.ch\web-2013\wp-content\plugins\fn-woocommerce-saferpay/fn-utilities.php:29
+msgid "WooCommerce version 2.0 or higher is not installed"
+msgstr "WooCommerce 2.0 oder höher ist nicht installiert"
+
+#~ msgid "Sofortüberweisung"
+#~ msgstr "Sofortüberweisung"

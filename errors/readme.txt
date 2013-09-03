@@ -1,0 +1,1 @@
+This folder contains error message returned by Saferpay
