@@ -50,6 +50,8 @@ class FNWC_Saferpay_Gateway extends WC_Payment_Gateway {
 		// 3. Get/Set the options
 		$this->title = $this->get_option( 'title' );
 		$this->saferpay_accountid =  $this->get_option( 'accountid' );
+		$this->order_description =  $this->get_option( 'order_description' );
+		$this->order_id_prefix = $this->get_option( 'order_id_prefix' );
 
 		if ( $this->enabled && is_admin() ) {
 			$this->install_saferpay_page();
@@ -200,6 +202,21 @@ class FNWC_Saferpay_Gateway extends WC_Payment_Gateway {
 				'type' => 'textarea',
 				'default' => ''
 			),
+			'order_id_prefix' => array(
+				'title' => __( 'Invoice prefix', 'fnwc-woocommerce' ),
+				'type' => 'text',
+				'description' => __( 'Please enter a prefix for your invoice numbers. If you use your Saferpay account for multiple stores ensure this prefix is unqiue to identify the order correctly.', 'fnwc-woocommerce' ),
+				'default' => __( 'WC-', 'fnwc-woocommerce' ),
+				'desc_tip'      => true,
+			),
+			'order_description' => array(
+				'title' => __( 'Invoice description', 'fnwc-woocommerce' ),
+				'type' => 'text',
+				'description' => __( 'This is the description which the user sees during the Saferpay payment process. Use the placeholder #_ORDERID to get the Id of the current order.', 'fnwc-woocommerce' ),
+				'default' => __( 'Your order # #_ORDERID', 'fnwc-woocommerce' ),
+				'desc_tip'      => true,
+			),
+
 			/*  Payment methods */
 			'payment_methods' => array(
 				'title' => __( 'Payment methods', 'fnwc-woocommerce' ),
@@ -330,7 +347,7 @@ class FNWC_Saferpay_Gateway extends WC_Payment_Gateway {
 		// If 
 		if (!empty($_GET))
 		{
-			$url = fn_pay_confirm_complete();
+			$url = fn_pay_confirm_complete($this);
 			wp_redirect($url); 
 			exit;
 		}

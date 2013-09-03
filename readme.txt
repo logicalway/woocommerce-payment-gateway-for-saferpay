@@ -3,7 +3,7 @@ Contributors: smkb
 Tags: woocommerce, wordpress ecommerce, payment gateway
 Requires at least: 3.5
 Tested up to: 3.5
-Stable tag: 0.4.5
+Stable tag: 0.4.6
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -55,6 +55,7 @@ The manual installation method involves downloading our eCommerce plugin and upl
 
 == Frequently Asked Questions ==
 
+In preparation
 
 
 == Screenshots ==
@@ -64,6 +65,10 @@ The manual installation method involves downloading our eCommerce plugin and upl
 
 
 == Changelog ==
+
+= 0.4.6 - 03/09/2013 =
+* Added: Configuration option - Prefix for order id on Saferpay
+* Added: Configuration option - Order description durig Saferpay checkout
 
 = 0.4.5 - 03/09/2013 =
 * Adjusted version/stable tag to be reflected properly

@@ -6,7 +6,7 @@
 	Author: Stefan Keller (FERN media solutions GmbH)
 	Author URI: http://www.fern.ch/team/
 
-	Version: 0.4.5
+	Version: 0.4.6
 
 	License: GNU General Public License v2.0 (or later)
 	License URI: http://www.opensource.org/licenses/gpl-license.php

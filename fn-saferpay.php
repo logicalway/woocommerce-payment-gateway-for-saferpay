@@ -22,13 +22,18 @@ define('FN_SAFERPAY_TESTACCOUNT_PW', 'XAjc3Kna');
  */		
 function fn_get_createpayiniturl($gateway, $order, $backlink, $faillink)
 {
+	
+	$description = str_replace("#_ORDERID", $order->id, $gateway->order_description);
+	$orderid = $gateway->order_id_prefix . $order->id;
+		
 	$variables = array (
 	
+		
 		 'ACCOUNTID' => $gateway->saferpay_accountid,
 		 'AMOUNT' => round($order->get_total(),2) * 100, // Saferpay wants to have cent-values
 		 'CURRENCY' => get_woocommerce_currency(),
-		 'DESCRIPTION' => urlencode('Order #' . $order->id),
-		 'ORDERID' => $order->id,
+		 'DESCRIPTION' => urlencode($description),
+		 'ORDERID' => $orderid,
 		 /* 'VTCONFIG' => '', */		 
 		 'SUCCESSLINK' => $gateway->successlink,
 		 'FAILLINK' => $faillink,  
@@ -129,7 +134,13 @@ function fn_pay_validate_and_complete($gateway, $posted)
 			$amount = fn_simplexml_attribute($xml, 'AMOUNT');
 			
 			// Get the order from the server
-			$orderid = fn_simplexml_attribute($xml, 'ORDERID');
+			$orderid_with_prefix = fn_simplexml_attribute($xml, 'ORDERID');
+			
+			// Get the order id without prefix
+			$orderid = str_replace($gateway->order_id_prefix, '', $orderid_with_prefix);
+			
+			$gateway->alert_admin($orderid .  " -- " . $gateway->saferpay_accountid);
+			
 			$order = new WC_Order($orderid);
 			
 			// Validate Status
@@ -229,7 +240,7 @@ function fn_pay_confirm_is_valid($gateway, $posted)
  *
  * @return string - returns the url the redirect page
  */	
-function fn_pay_confirm_complete()
+function fn_pay_confirm_complete($gateway)
 {
 	
 	global $woocommerce;
@@ -244,8 +255,15 @@ function fn_pay_confirm_complete()
 		if($xml)
 		{
 			$id = fn_simplexml_attribute($xml, 'ID');
-			$orderid = fn_simplexml_attribute($xml, 'ORDERID');
 			$amount = fn_simplexml_attribute($xml, 'AMOUNT');
+			
+						// Get the order from the server
+			$orderid_with_prefix = fn_simplexml_attribute($xml, 'ORDERID');
+			
+			// Get the order id without prefix
+			$orderid = str_replace($gateway->order_id_prefix, '', $orderid_with_prefix);
+			
+			
 			
 			if($orderid != "")
 			{
