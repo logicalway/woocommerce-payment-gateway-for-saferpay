@@ -68,7 +68,7 @@ In preparation
 
 = 0.4.6 - 03/09/2013 =
 * Added: Configuration option - Prefix for order id on Saferpay
-* Added: Configuration option - Order description durig Saferpay checkout
+* Added: Configuration option - Order description during Saferpay checkout
 
 = 0.4.5 - 03/09/2013 =
 * Adjusted version/stable tag to be reflected properly
