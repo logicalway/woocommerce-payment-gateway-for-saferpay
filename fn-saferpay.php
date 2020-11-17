@@ -272,8 +272,12 @@ function fn_pay_confirm_complete($gateway)
 				if($order->status == 'completed' || $order->status == 'processing')
 				{
 					// Display the Thank you page
-					$pid = woocommerce_get_page_id('thanks');
-					return get_permalink($pid);		
+					/* $pid = woocommerce_get_page_id('thanks'); */
+					/* return get_permalink($pid);	*/	
+					return $gateway->get_return_url( $order );
+
+
+
 				}
 			}
 			

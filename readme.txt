@@ -3,7 +3,7 @@ Contributors: smkb
 Tags: woocommerce, wordpress ecommerce, payment gateway
 Requires at least: 3.5
 Tested up to: 3.5
-Stable tag: 0.4.6
+Stable tag: 0.4.10
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -65,6 +65,21 @@ In preparation
 
 
 == Changelog ==
+
+= 0.4.10 - 20/01/2020
+* Retiring product
+
+= 0.4.9 - 21/09/2017 =
+* Preparation: Version 0.5.0 (JSON API)
+
+= 0.4.9 - 14/11/2014 =
+* Added: Adjusted version number
+
+= 0.4.8 - 14/11/2014 =
+* Added: Comments
+
+= 0.4.7 - 14/11/2014 =
+* Fixed: woocommerce_get_page_id is deprecated since WC 2.1.2. (Thanks to gschaer)
 
 = 0.4.6 - 03/09/2013 =
 * Added: Configuration option - Prefix for order id on Saferpay

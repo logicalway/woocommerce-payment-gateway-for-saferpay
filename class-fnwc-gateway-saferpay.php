@@ -12,7 +12,7 @@ require_once("fn-saferpay.php");
  *
  * @class 		FNWC_Saferpay_Gateway
  * @extends		WC_Payment_Gateway
- * @version		1.0.0
+ * @version		1.0.1
  * @package		-
  * @author 		Stefan Keller
  */
