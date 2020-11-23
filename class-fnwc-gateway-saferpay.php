@@ -261,8 +261,8 @@ class FNWC_Saferpay_Gateway extends WC_Payment_Gateway {
 		
 		global $woocommerce;
 		
-		// Get the order 
-		$order = new WC_Order($order_id);
+		// Get the order
+        $order = wc_get_order($order_id);
 		$status = 'success';
 		
 		/************************************************************
@@ -283,7 +283,7 @@ class FNWC_Saferpay_Gateway extends WC_Payment_Gateway {
 		*/
 		
 		// Get the URL of the checkout page (in case the user wants to return)
-		$checkouturl = $woocommerce->cart->get_checkout_url();
+        $checkouturl = wc_get_checkout_url();
 		$faillink = home_url('/wc-api/fnwc_saferpay_gateway');
 		
 		// Create the so called Init Pay URL for Saferpay

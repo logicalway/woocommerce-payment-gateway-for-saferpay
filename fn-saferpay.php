@@ -140,9 +140,9 @@ function fn_pay_validate_and_complete($gateway, $posted)
 			$orderid = str_replace($gateway->order_id_prefix, '', $orderid_with_prefix);
 			
 			$gateway->alert_admin($orderid .  " -- " . $gateway->saferpay_accountid);
-			
-			$order = new WC_Order($orderid);
-			
+
+			$order = wc_get_order($orderid);
+
 			// Validate Status
 			if($order->status == 'completed' || $order->status == 'processing')
 			{
@@ -267,8 +267,9 @@ function fn_pay_confirm_complete($gateway)
 			
 			if($orderid != "")
 			{
-				$order = new WC_Order($orderid);	
-				
+
+				$order = wc_get_order($orderid);
+
 				if($order->status == 'completed' || $order->status == 'processing')
 				{
 					// Display the Thank you page
